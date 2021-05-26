@@ -1,0 +1,179 @@
+﻿@model MVC_Produsen_Validasi.Models.CekRegPasienViewModel
+@{
+    Layout = "~/Views/Shared/BPOM.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+
+<div class="container">
+    <p>Rumah Sakit</p>
+    <h4>Data Registrasi Pasien</h4>
+    <a href="#" class="btn btn-primary" onclick="AddNewLaporan(0)">Tambah</a> <br /><br />
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Reg Vaksin</th>
+                <th>NIK</th>
+                <th>Nama</th>
+                <th>Kelurahan</th>
+                <th>Kecamatan</th>
+                <th>Kota</th>
+                <th>Status Vaksin</th>
+                <th>Aksi</th>
+
+            </tr>
+        </thead>
+        <tbody id="SetLaporanList">
+            <tr id="LoadingStatus" style="color:red"></tr>
+        </tbody>
+    </table>
+
+    @*Create A Popup Modal With Registration Form For Add Or Edit Report Record*@
+
+    <div class="modal fade" id="MyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="ModalTitle"></h4>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                        <fieldset id="SubmitForm">
+                            @Html.HiddenFor(m => m.id, new { @id = "LapId" })
+                            <div class="form-group">
+                                @Html.DropDownListFor(m => m.idRegVaksin, ViewBag.ListOfRegVaksin as SelectList, "--Select Reg Vaksin--", new { @id = "DropDwn1", @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                @Html.DropDownListFor(m => m.idPend, ViewBag.ListOfDataPenduduk as SelectList, "--Select NIK--", new { @id = "DropDwn2", @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                @Html.DropDownListFor(m => m.idVak, ViewBag.ListOfStatusVaksin as SelectList, "--Select Status--", new { @id = "DropDwn3", @class = "form-control" })
+                            </div>
+
+                            <div class="form-group">
+                                <a href="#" class="btn btn-block btn-primary" id="SaveLaporanRecord">Save</a>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Create A PopUp Modal For ReportConfirmation*@
+
+    <div class="modal fade" id="ReportConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Lapor Data Terima Vaksin</h4>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <h5>Apakah anda yakin ingin melaporkan data ini ??</h5>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-danger" data-dismiss="modal" id="r">Batal</a>
+                    <a href="#" class="btn btn-primary" onclick="ConfirmReport()">Ya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#LoadingStatus").html("Loading....");
+    $.get("/CekNoRegPasien/GetCekRegPasienList", null, DataBind);
+    function DataBind(LaporanList) {
+        var SetData = $("#SetLaporanList");
+        for (var i = 0; i < LaporanList.length; i++) {
+            var Data = "<tr class='row_" + LaporanList[i].id + "'>" +
+                "<td>" + LaporanList[i].id + "</td>" +
+                "<td>" + LaporanList[i].kode + "</td>" +
+                "<td>" + LaporanList[i].NIK + "</td>" +
+                "<td>" + LaporanList[i].nama + "</td>" +
+                "<td>" + LaporanList[i].kelurahan + "</td>" +
+                "<td>" + LaporanList[i].kecamatan + "</td>" +
+                "<td>" + LaporanList[i].kota + "</td>" +
+                "<td>" + LaporanList[i].status + "</td>" +
+                "<td>" + "<a href='#' class='btn btn-warning' onclick='EditLaporanRecord(" + LaporanList[i].id + ")' >Edit</a> <a href='#' class='btn btn-success' onclick='BuatLaporanRecord(" + LaporanList[i].id + ")'>Lapor</a>" + "</td>" +
+                "</tr>";
+            SetData.append(Data);
+            $("#LoadingStatus").html(" ");
+
+        }
+    }
+
+    //Show The Popup Modal For Add New Report
+
+    function AddNewLaporan(id) {
+        $("#ModalTitle").html("Tambah Data Penerima Vaksin");
+        $("#form")[0].reset();
+        $("#LapId").val(0);
+        $("#DropDwn1 option:selected").text("--Pilih Reg Vaksin--");
+        $("#DropDwn2 option:selected").text("--Pilih NIK--");
+        $("#DropDwn3 option:selected").text("--Pilih Status Vaksin--");
+        $("#MyModal").modal();
+    }
+
+    //Show The Popup Modal For Edit Report Record
+
+    function EditLaporanRecord(id) {
+        var url = "/CekNoRegPasien/GetCekRegPasienById?id=" + id;
+        $("#ModalTitle").html("Update Laporan Record");
+        $("#MyModal").modal();
+        $.ajax({
+            type: "GET",
+            url: url,
+            success: function (data) {
+                var obj = JSON.parse(data);
+                $("#LapId").val(obj.id);
+                $("#pengirim").val(obj.pengirim);
+                $("#deskripsi").val(obj.deskripsi);
+                $("#DropDwn1 option:selected").text(obj.Reg_Vaksin.kode);
+                $("#DropDwn1 option:selected").val(obj.id);
+                $("#DropDwn2 option:selected").text(obj.Data_Penduduk.NIK);
+                $("#DropDwn2 option:selected").val(obj.id);
+                $("#DropDwn3 option:selected").text(obj.Vaksin.status);
+                $("#DropDwn3 option:selected").val(obj.idVak);
+            }
+        })
+    }
+
+    $("#SaveLaporanRecord").click(function () {
+        var data = $("#SubmitForm").serialize();
+        $.ajax({
+            type: "Post",
+            url: "/CekNoRegPasien/SaveDataInDatabase",
+            data: data,
+            success: function (result) {
+                alert("Success!..");
+                window.location.href = "/CekNoRegPasien/IndexPantau";
+                $("#MyModal").modal("hide");
+
+            }
+        })
+    })
+
+    //Show The Popup Modal For CreateComfirmation
+    var BuatLaporanRecord = function (id) {
+        $("#LapId").val(id);
+        $("#ReportConfirmation").modal("show");
+    }
+    var ConfirmReport = function () {
+        var LapId = $("#LapId").val();
+        $.ajax({
+            type: "POST",
+            url: "/CekNoRegPasien/BuatLaporanRecord?id=" + LapId,
+            success: function (result) {
+                $("#ReportConfirmation").modal("hide");
+                $(".row_" + LapId).remove();
+            }
+        })
+    }
+</script>

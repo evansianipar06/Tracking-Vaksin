@@ -1,0 +1,22 @@
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\bin\ServiceWCF.dll.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\bin\ServiceWCF.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\bin\ServiceWCF.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.SqlServer.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.SqlServer.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.csproj.CoreCompileInputs.cache
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.csproj.CopyComplete
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\bin\ServiceWCF.dll.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\bin\ServiceWCF.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\bin\ServiceWCF.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.SqlServer.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\bin\EntityFramework.SqlServer.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.csproj.CoreCompileInputs.cache
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.csproj.CopyComplete
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\09_TrackingVaksin\ServiceWCF\obj\Debug\ServiceWCF.pdb

@@ -1,0 +1,237 @@
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.dll.config
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.pdb
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\csc.exe
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\csc.exe.config
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\csc.rsp
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\csi.exe
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\csi.exe.config
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\csi.rsp
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Managed.Core.targets
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.AppContext.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Collections.Immutable.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Console.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Globalization.Calendars.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.Compression.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.FileSystem.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Net.Http.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Net.Sockets.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Reflection.Metadata.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.ValueTuple.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XPath.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.exe
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.exe.config
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.rsp
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\VBCSCompiler.exe
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\roslyn\VBCSCompiler.exe.config
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\Antlr3.Runtime.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\Microsoft.Web.Infrastructure.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\Newtonsoft.Json.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Helpers.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Mvc.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Optimization.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Razor.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Deployment.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Razor.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\WebGrease.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Helpers.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Mvc.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Optimization.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.Razor.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Deployment.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Razor.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\Newtonsoft.Json.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\Antlr3.Runtime.pdb
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csprojAssemblyReference.cache
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csproj.CoreCompileInputs.cache
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csproj.CopyComplete
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.dll
+D:\PERKULIAHAN\SEMESTER 4\Pemograman TekNET\New folder\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.dll.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\csc.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\csc.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\csc.rsp
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\csi.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\csi.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\csi.rsp
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.AppContext.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Collections.Immutable.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Console.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Globalization.Calendars.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.Compression.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.FileSystem.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Net.Http.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Net.Sockets.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Reflection.Metadata.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.ValueTuple.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XPath.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.rsp
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\VBCSCompiler.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\roslyn\VBCSCompiler.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\Antlr3.Runtime.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\Microsoft.Web.Infrastructure.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\Newtonsoft.Json.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Helpers.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Mvc.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Optimization.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Razor.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Deployment.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Razor.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\WebGrease.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Helpers.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Mvc.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Optimization.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.Razor.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Deployment.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Razor.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\Newtonsoft.Json.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\Antlr3.Runtime.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csproj.CoreCompileInputs.cache
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csproj.CopyComplete
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\a\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csprojAssemblyReference.cache
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.dll.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\AplikasiTrackingVaksin.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\csc.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\csc.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\csc.rsp
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\csi.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\csi.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\csi.rsp
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.AppContext.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Collections.Immutable.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Console.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Globalization.Calendars.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.Compression.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.FileSystem.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Net.Http.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Net.Sockets.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Reflection.Metadata.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.ValueTuple.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XPath.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\vbc.rsp
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\VBCSCompiler.exe
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\roslyn\VBCSCompiler.exe.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\Antlr3.Runtime.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\Microsoft.Web.Infrastructure.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\Newtonsoft.Json.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Helpers.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Mvc.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Optimization.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Razor.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Deployment.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Razor.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\WebGrease.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Helpers.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Mvc.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Optimization.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.Razor.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Deployment.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\System.Web.WebPages.Razor.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\Newtonsoft.Json.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\Antlr3.Runtime.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csprojAssemblyReference.cache
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csproj.CoreCompileInputs.cache
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.csproj.CopyComplete
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\AplikasiTrackingVaksin\obj\Debug\AplikasiTrackingVaksin.pdb

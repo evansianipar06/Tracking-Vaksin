@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MVC_Produsen_Validasi.Models.Data_Penduduk>
+
+@{
+    Layout = "~/Views/Shared/RumahSakit.cshtml";
+}
+
+<p>Rumah Sakit</p>
+<h4>Data Penduduk</h4>
+<hr />
+@using (Html.BeginForm("Index", "Penduduk", FormMethod.Get))
+{
+    @Html.TextBox("cari")
+    <input type="submit" value="Cari" />
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>NIK</th>
+            <th>Nama</th>
+            <th>Kelurahan</th>
+            <th>Kecamatan</th>
+            <th>Kota</th>
+            <th>Kode Pos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="6" style="color: red; text-align: center">
+                    Data Tidak ditemukan
+                </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NIK</td>
+                    <td>@item.nama</td>
+                    <td>@item.kelurahan</td>
+                    <td>@item.kecamatan</td>
+                    <td>@item.kota</td>
+                    <td>@item.kode_pos</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

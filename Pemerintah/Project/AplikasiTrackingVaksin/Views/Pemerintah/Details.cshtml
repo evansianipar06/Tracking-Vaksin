@@ -1,0 +1,48 @@
+﻿@model AplikasiTrackingVaksin.ServiceReference1.Data_Penduduk
+
+@{
+    Layout = "~/Views/Shared/Pemerintah.cshtml";
+}
+
+<div>
+    <h4>Detail Data ( @Html.ValueFor(model => model.NIK) - @Html.ValueFor(model => model.nama))</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <a href="@Url.Action("Index", "Pemerintah")" class="btn btn-primary">Kembali</a>
+        </div>
+    </div>
+    <br />
+    <table class="table table-striped">
+        <tr>
+            <td><b>NIK</b></td>
+            <td>:</td>
+            <td>@Html.DisplayFor(model => model.NIK)</td>
+        </tr>
+        <tr>
+            <td><b>Nama</b></td>
+            <td>:</td>
+            <td>@Html.DisplayFor(model => model.nama)</td>
+        </tr>
+        <tr>
+            <td><b>Kelurahan</b></td>
+            <td>:</td>
+            <td>@Html.DisplayFor(model => model.kelurahan)</td>
+        </tr>
+        <tr>
+            <td><b>Kecamatan</b></td>
+            <td>:</td>
+            <td>@Html.DisplayFor(model => model.kecamatan)</td>
+        </tr>
+        <tr>
+            <td><b>Kota</b></td>
+            <td>:</td>
+            <td>@Html.DisplayFor(model => model.kota)</td>
+        </tr>
+        <tr>
+            <td><b>Kode Pos</b></td>
+            <td>:</td>
+            <td>@Html.DisplayFor(model => model.kode_pos)</td>
+        </tr>
+    </table>
+</div>

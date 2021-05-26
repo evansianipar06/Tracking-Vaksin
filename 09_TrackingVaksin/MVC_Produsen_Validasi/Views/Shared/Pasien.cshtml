@@ -1,0 +1,39 @@
+﻿<link rel="stylesheet" href="~/adminlte/css/adminlte.min.css">
+
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracking Vaksin</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    @*    <link rel="stylesheet" href="dist/css/adminlte.min.css">*@
+</head>
+<body class="hold-transition sidebar-mini">
+    <!-- As a heading -->
+    
+
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Tracking Vaksin</span>
+            </div>
+        </nav>
+        @RenderBody()
+    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/adminlte/js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

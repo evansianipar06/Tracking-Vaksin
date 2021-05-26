@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TrackingVaksinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CekValid">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idRegVaksin" Type="int" />
+          <Property Name="status" Type="bit" />
+          <Property Name="idPend" Type="int" />
+          <Property Name="idVak" Type="int" />
+        </EntityType>
+        <EntityType Name="Data_Penduduk">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NIK" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="nama" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="kelurahan" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="kecamatan" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="kota" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="kode_pos" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LaporTerimaVaksin">
+          <Key>
+            <PropertyRef Name="idTer" />
+          </Key>
+          <Property Name="idTer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idLapor" Type="int" />
+          <Property Name="pengirim" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="deskripsi" Type="varchar" MaxLength="50" />
+          <Property Name="status" Type="bit" />
+          <Property Name="idVak" Type="int" />
+        </EntityType>
+        <EntityType Name="LaporValidasiVaksin">
+          <Key>
+            <PropertyRef Name="idLapor" />
+          </Key>
+          <Property Name="idLapor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="namaProdusen" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="deskripsi" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="status" Type="bit" />
+          <Property Name="id" Type="int" />
+        </EntityType>
+        <EntityType Name="PenggunaanVaksin">
+          <Key>
+            <PropertyRef Name="idUsed" />
+          </Key>
+          <Property Name="idUsed" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="noRekamMedis" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="status" Type="bit" />
+          <Property Name="idRegVaksin" Type="int" />
+          <Property Name="idPend" Type="int" />
+        </EntityType>
+        <EntityType Name="Reg_Vaksin">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kode" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="jenis" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Vaksin">
+          <Key>
+            <PropertyRef Name="idVak" />
+          </Key>
+          <Property Name="idVak" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__CekValid__idPend__6EC0713C">
+          <End Role="Data_Penduduk" Type="Self.Data_Penduduk" Multiplicity="0..1" />
+          <End Role="CekValid" Type="Self.CekValid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Data_Penduduk">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CekValid">
+              <PropertyRef Name="idPend" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CekValid__idVak__6DCC4D03">
+          <End Role="Reg_Vaksin" Type="Self.Reg_Vaksin" Multiplicity="0..1" />
+          <End Role="CekValid" Type="Self.CekValid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reg_Vaksin">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CekValid">
+              <PropertyRef Name="idRegVaksin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CekValid__idVak__6FB49575">
+          <End Role="Vaksin" Type="Self.Vaksin" Multiplicity="0..1" />
+          <End Role="CekValid" Type="Self.CekValid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vaksin">
+              <PropertyRef Name="idVak" />
+            </Principal>
+            <Dependent Role="CekValid">
+              <PropertyRef Name="idVak" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__LaporTeri__idLap__681373AD">
+          <End Role="LaporValidasiVaksin" Type="Self.LaporValidasiVaksin" Multiplicity="0..1" />
+          <End Role="LaporTerimaVaksin" Type="Self.LaporTerimaVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LaporValidasiVaksin">
+              <PropertyRef Name="idLapor" />
+            </Principal>
+            <Dependent Role="LaporTerimaVaksin">
+              <PropertyRef Name="idLapor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__LaporTeri__idVak__690797E6">
+          <End Role="Vaksin" Type="Self.Vaksin" Multiplicity="0..1" />
+          <End Role="LaporTerimaVaksin" Type="Self.LaporTerimaVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vaksin">
+              <PropertyRef Name="idVak" />
+            </Principal>
+            <Dependent Role="LaporTerimaVaksin">
+              <PropertyRef Name="idVak" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__LaporValidas__id__634EBE90">
+          <End Role="Reg_Vaksin" Type="Self.Reg_Vaksin" Multiplicity="0..1" />
+          <End Role="LaporValidasiVaksin" Type="Self.LaporValidasiVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reg_Vaksin">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="LaporValidasiVaksin">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Penggunaa__idPen__756D6ECB">
+          <End Role="Data_Penduduk" Type="Self.Data_Penduduk" Multiplicity="0..1" />
+          <End Role="PenggunaanVaksin" Type="Self.PenggunaanVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Data_Penduduk">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PenggunaanVaksin">
+              <PropertyRef Name="idPend" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Penggunaa__idReg__74794A92">
+          <End Role="Reg_Vaksin" Type="Self.Reg_Vaksin" Multiplicity="0..1" />
+          <End Role="PenggunaanVaksin" Type="Self.PenggunaanVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reg_Vaksin">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PenggunaanVaksin">
+              <PropertyRef Name="idRegVaksin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TrackingVaksinModelStoreContainer">
+          <EntitySet Name="CekValid" EntityType="Self.CekValid" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Data_Penduduk" EntityType="Self.Data_Penduduk" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LaporTerimaVaksin" EntityType="Self.LaporTerimaVaksin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LaporValidasiVaksin" EntityType="Self.LaporValidasiVaksin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PenggunaanVaksin" EntityType="Self.PenggunaanVaksin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reg_Vaksin" EntityType="Self.Reg_Vaksin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Vaksin" EntityType="Self.Vaksin" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__CekValid__idPend__6EC0713C" Association="Self.FK__CekValid__idPend__6EC0713C">
+            <End Role="Data_Penduduk" EntitySet="Data_Penduduk" />
+            <End Role="CekValid" EntitySet="CekValid" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CekValid__idVak__6DCC4D03" Association="Self.FK__CekValid__idVak__6DCC4D03">
+            <End Role="Reg_Vaksin" EntitySet="Reg_Vaksin" />
+            <End Role="CekValid" EntitySet="CekValid" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CekValid__idVak__6FB49575" Association="Self.FK__CekValid__idVak__6FB49575">
+            <End Role="Vaksin" EntitySet="Vaksin" />
+            <End Role="CekValid" EntitySet="CekValid" />
+          </AssociationSet>
+          <AssociationSet Name="FK__LaporTeri__idLap__681373AD" Association="Self.FK__LaporTeri__idLap__681373AD">
+            <End Role="LaporValidasiVaksin" EntitySet="LaporValidasiVaksin" />
+            <End Role="LaporTerimaVaksin" EntitySet="LaporTerimaVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__LaporTeri__idVak__690797E6" Association="Self.FK__LaporTeri__idVak__690797E6">
+            <End Role="Vaksin" EntitySet="Vaksin" />
+            <End Role="LaporTerimaVaksin" EntitySet="LaporTerimaVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__LaporValidas__id__634EBE90" Association="Self.FK__LaporValidas__id__634EBE90">
+            <End Role="Reg_Vaksin" EntitySet="Reg_Vaksin" />
+            <End Role="LaporValidasiVaksin" EntitySet="LaporValidasiVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Penggunaa__idPen__756D6ECB" Association="Self.FK__Penggunaa__idPen__756D6ECB">
+            <End Role="Data_Penduduk" EntitySet="Data_Penduduk" />
+            <End Role="PenggunaanVaksin" EntitySet="PenggunaanVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Penggunaa__idReg__74794A92" Association="Self.FK__Penggunaa__idReg__74794A92">
+            <End Role="Reg_Vaksin" EntitySet="Reg_Vaksin" />
+            <End Role="PenggunaanVaksin" EntitySet="PenggunaanVaksin" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TrackingVaksinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CekValid">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idRegVaksin" Type="Int32" />
+          <Property Name="status" Type="Boolean" />
+          <Property Name="idPend" Type="Int32" />
+          <Property Name="idVak" Type="Int32" />
+          <NavigationProperty Name="Data_Penduduk" Relationship="Self.FK__CekValid__idPend__6EC0713C" FromRole="CekValid" ToRole="Data_Penduduk" />
+          <NavigationProperty Name="Reg_Vaksin" Relationship="Self.FK__CekValid__idVak__6DCC4D03" FromRole="CekValid" ToRole="Reg_Vaksin" />
+          <NavigationProperty Name="Vaksin" Relationship="Self.FK__CekValid__idVak__6FB49575" FromRole="CekValid" ToRole="Vaksin" />
+        </EntityType>
+        <EntityType Name="Data_Penduduk">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NIK" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nama" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kelurahan" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kecamatan" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kota" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="kode_pos" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CekValid" Relationship="Self.FK__CekValid__idPend__6EC0713C" FromRole="Data_Penduduk" ToRole="CekValid" />
+          <NavigationProperty Name="PenggunaanVaksin" Relationship="Self.FK__Penggunaa__idPen__756D6ECB" FromRole="Data_Penduduk" ToRole="PenggunaanVaksin" />
+        </EntityType>
+        <EntityType Name="LaporTerimaVaksin">
+          <Key>
+            <PropertyRef Name="idTer" />
+          </Key>
+          <Property Name="idTer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idLapor" Type="Int32" />
+          <Property Name="pengirim" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="deskripsi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="Boolean" />
+          <Property Name="idVak" Type="Int32" />
+          <NavigationProperty Name="LaporValidasiVaksin" Relationship="Self.FK__LaporTeri__idLap__681373AD" FromRole="LaporTerimaVaksin" ToRole="LaporValidasiVaksin" />
+          <NavigationProperty Name="Vaksin" Relationship="Self.FK__LaporTeri__idVak__690797E6" FromRole="LaporTerimaVaksin" ToRole="Vaksin" />
+        </EntityType>
+        <EntityType Name="LaporValidasiVaksin">
+          <Key>
+            <PropertyRef Name="idLapor" />
+          </Key>
+          <Property Name="idLapor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="namaProdusen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="deskripsi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="status" Type="Boolean" />
+          <Property Name="id" Type="Int32" />
+          <NavigationProperty Name="LaporTerimaVaksin" Relationship="Self.FK__LaporTeri__idLap__681373AD" FromRole="LaporValidasiVaksin" ToRole="LaporTerimaVaksin" />
+          <NavigationProperty Name="Reg_Vaksin" Relationship="Self.FK__LaporValidas__id__634EBE90" FromRole="LaporValidasiVaksin" ToRole="Reg_Vaksin" />
+        </EntityType>
+        <EntityType Name="PenggunaanVaksin">
+          <Key>
+            <PropertyRef Name="idUsed" />
+          </Key>
+          <Property Name="idUsed" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="noRekamMedis" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="status" Type="Boolean" />
+          <Property Name="idRegVaksin" Type="Int32" />
+          <Property Name="idPend" Type="Int32" />
+          <NavigationProperty Name="Data_Penduduk" Relationship="Self.FK__Penggunaa__idPen__756D6ECB" FromRole="PenggunaanVaksin" ToRole="Data_Penduduk" />
+          <NavigationProperty Name="Reg_Vaksin" Relationship="Self.FK__Penggunaa__idReg__74794A92" FromRole="PenggunaanVaksin" ToRole="Reg_Vaksin" />
+        </EntityType>
+        <EntityType Name="Reg_Vaksin">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kode" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jenis" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CekValid" Relationship="Self.FK__CekValid__idVak__6DCC4D03" FromRole="Reg_Vaksin" ToRole="CekValid" />
+          <NavigationProperty Name="LaporValidasiVaksin" Relationship="Self.FK__LaporValidas__id__634EBE90" FromRole="Reg_Vaksin" ToRole="LaporValidasiVaksin" />
+          <NavigationProperty Name="PenggunaanVaksin" Relationship="Self.FK__Penggunaa__idReg__74794A92" FromRole="Reg_Vaksin" ToRole="PenggunaanVaksin" />
+        </EntityType>
+        <EntityType Name="Vaksin">
+          <Key>
+            <PropertyRef Name="idVak" />
+          </Key>
+          <Property Name="idVak" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CekValid" Relationship="Self.FK__CekValid__idVak__6FB49575" FromRole="Vaksin" ToRole="CekValid" />
+          <NavigationProperty Name="LaporTerimaVaksin" Relationship="Self.FK__LaporTeri__idVak__690797E6" FromRole="Vaksin" ToRole="LaporTerimaVaksin" />
+        </EntityType>
+        <Association Name="FK__CekValid__idPend__6EC0713C">
+          <End Role="Data_Penduduk" Type="Self.Data_Penduduk" Multiplicity="0..1" />
+          <End Role="CekValid" Type="Self.CekValid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Data_Penduduk">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CekValid">
+              <PropertyRef Name="idPend" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CekValid__idVak__6DCC4D03">
+          <End Role="Reg_Vaksin" Type="Self.Reg_Vaksin" Multiplicity="0..1" />
+          <End Role="CekValid" Type="Self.CekValid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reg_Vaksin">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="CekValid">
+              <PropertyRef Name="idRegVaksin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CekValid__idVak__6FB49575">
+          <End Role="Vaksin" Type="Self.Vaksin" Multiplicity="0..1" />
+          <End Role="CekValid" Type="Self.CekValid" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vaksin">
+              <PropertyRef Name="idVak" />
+            </Principal>
+            <Dependent Role="CekValid">
+              <PropertyRef Name="idVak" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Penggunaa__idPen__756D6ECB">
+          <End Role="Data_Penduduk" Type="Self.Data_Penduduk" Multiplicity="0..1" />
+          <End Role="PenggunaanVaksin" Type="Self.PenggunaanVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Data_Penduduk">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PenggunaanVaksin">
+              <PropertyRef Name="idPend" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__LaporTeri__idLap__681373AD">
+          <End Role="LaporValidasiVaksin" Type="Self.LaporValidasiVaksin" Multiplicity="0..1" />
+          <End Role="LaporTerimaVaksin" Type="Self.LaporTerimaVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LaporValidasiVaksin">
+              <PropertyRef Name="idLapor" />
+            </Principal>
+            <Dependent Role="LaporTerimaVaksin">
+              <PropertyRef Name="idLapor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__LaporTeri__idVak__690797E6">
+          <End Role="Vaksin" Type="Self.Vaksin" Multiplicity="0..1" />
+          <End Role="LaporTerimaVaksin" Type="Self.LaporTerimaVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vaksin">
+              <PropertyRef Name="idVak" />
+            </Principal>
+            <Dependent Role="LaporTerimaVaksin">
+              <PropertyRef Name="idVak" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__LaporValidas__id__634EBE90">
+          <End Role="Reg_Vaksin" Type="Self.Reg_Vaksin" Multiplicity="0..1" />
+          <End Role="LaporValidasiVaksin" Type="Self.LaporValidasiVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reg_Vaksin">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="LaporValidasiVaksin">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Penggunaa__idReg__74794A92">
+          <End Role="Reg_Vaksin" Type="Self.Reg_Vaksin" Multiplicity="0..1" />
+          <End Role="PenggunaanVaksin" Type="Self.PenggunaanVaksin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reg_Vaksin">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="PenggunaanVaksin">
+              <PropertyRef Name="idRegVaksin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TrackingVaksinEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CekValid" EntityType="Self.CekValid" />
+          <EntitySet Name="Data_Penduduk" EntityType="Self.Data_Penduduk" />
+          <EntitySet Name="LaporTerimaVaksin" EntityType="Self.LaporTerimaVaksin" />
+          <EntitySet Name="LaporValidasiVaksin" EntityType="Self.LaporValidasiVaksin" />
+          <EntitySet Name="PenggunaanVaksin" EntityType="Self.PenggunaanVaksin" />
+          <EntitySet Name="Reg_Vaksin" EntityType="Self.Reg_Vaksin" />
+          <EntitySet Name="Vaksin" EntityType="Self.Vaksin" />
+          <AssociationSet Name="FK__CekValid__idPend__6EC0713C" Association="Self.FK__CekValid__idPend__6EC0713C">
+            <End Role="Data_Penduduk" EntitySet="Data_Penduduk" />
+            <End Role="CekValid" EntitySet="CekValid" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CekValid__idVak__6DCC4D03" Association="Self.FK__CekValid__idVak__6DCC4D03">
+            <End Role="Reg_Vaksin" EntitySet="Reg_Vaksin" />
+            <End Role="CekValid" EntitySet="CekValid" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CekValid__idVak__6FB49575" Association="Self.FK__CekValid__idVak__6FB49575">
+            <End Role="Vaksin" EntitySet="Vaksin" />
+            <End Role="CekValid" EntitySet="CekValid" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Penggunaa__idPen__756D6ECB" Association="Self.FK__Penggunaa__idPen__756D6ECB">
+            <End Role="Data_Penduduk" EntitySet="Data_Penduduk" />
+            <End Role="PenggunaanVaksin" EntitySet="PenggunaanVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__LaporTeri__idLap__681373AD" Association="Self.FK__LaporTeri__idLap__681373AD">
+            <End Role="LaporValidasiVaksin" EntitySet="LaporValidasiVaksin" />
+            <End Role="LaporTerimaVaksin" EntitySet="LaporTerimaVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__LaporTeri__idVak__690797E6" Association="Self.FK__LaporTeri__idVak__690797E6">
+            <End Role="Vaksin" EntitySet="Vaksin" />
+            <End Role="LaporTerimaVaksin" EntitySet="LaporTerimaVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__LaporValidas__id__634EBE90" Association="Self.FK__LaporValidas__id__634EBE90">
+            <End Role="Reg_Vaksin" EntitySet="Reg_Vaksin" />
+            <End Role="LaporValidasiVaksin" EntitySet="LaporValidasiVaksin" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Penggunaa__idReg__74794A92" Association="Self.FK__Penggunaa__idReg__74794A92">
+            <End Role="Reg_Vaksin" EntitySet="Reg_Vaksin" />
+            <End Role="PenggunaanVaksin" EntitySet="PenggunaanVaksin" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TrackingVaksinModelStoreContainer" CdmEntityContainer="TrackingVaksinEntities">
+          <EntitySetMapping Name="CekValid">
+            <EntityTypeMapping TypeName="TrackingVaksinModel.CekValid">
+              <MappingFragment StoreEntitySet="CekValid">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idRegVaksin" ColumnName="idRegVaksin" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="idPend" ColumnName="idPend" />
+                <ScalarProperty Name="idVak" ColumnName="idVak" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Data_Penduduk">
+            <EntityTypeMapping TypeName="TrackingVaksinModel.Data_Penduduk">
+              <MappingFragment StoreEntitySet="Data_Penduduk">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="NIK" ColumnName="NIK" />
+                <ScalarProperty Name="nama" ColumnName="nama" />
+                <ScalarProperty Name="kelurahan" ColumnName="kelurahan" />
+                <ScalarProperty Name="kecamatan" ColumnName="kecamatan" />
+                <ScalarProperty Name="kota" ColumnName="kota" />
+                <ScalarProperty Name="kode_pos" ColumnName="kode_pos" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LaporTerimaVaksin">
+            <EntityTypeMapping TypeName="TrackingVaksinModel.LaporTerimaVaksin">
+              <MappingFragment StoreEntitySet="LaporTerimaVaksin">
+                <ScalarProperty Name="idTer" ColumnName="idTer" />
+                <ScalarProperty Name="idLapor" ColumnName="idLapor" />
+                <ScalarProperty Name="pengirim" ColumnName="pengirim" />
+                <ScalarProperty Name="deskripsi" ColumnName="deskripsi" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="idVak" ColumnName="idVak" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LaporValidasiVaksin">
+            <EntityTypeMapping TypeName="TrackingVaksinModel.LaporValidasiVaksin">
+              <MappingFragment StoreEntitySet="LaporValidasiVaksin">
+                <ScalarProperty Name="idLapor" ColumnName="idLapor" />
+                <ScalarProperty Name="namaProdusen" ColumnName="namaProdusen" />
+                <ScalarProperty Name="deskripsi" ColumnName="deskripsi" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PenggunaanVaksin">
+            <EntityTypeMapping TypeName="TrackingVaksinModel.PenggunaanVaksin">
+              <MappingFragment StoreEntitySet="PenggunaanVaksin">
+                <ScalarProperty Name="idUsed" ColumnName="idUsed" />
+                <ScalarProperty Name="noRekamMedis" ColumnName="noRekamMedis" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="idRegVaksin" ColumnName="idRegVaksin" />
+                <ScalarProperty Name="idPend" ColumnName="idPend" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reg_Vaksin">
+            <EntityTypeMapping TypeName="TrackingVaksinModel.Reg_Vaksin">
+              <MappingFragment StoreEntitySet="Reg_Vaksin">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kode" ColumnName="kode" />
+                <ScalarProperty Name="jenis" ColumnName="jenis" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vaksin">
+            <EntityTypeMapping TypeName="TrackingVaksinModel.Vaksin">
+              <MappingFragment StoreEntitySet="Vaksin">
+                <ScalarProperty Name="idVak" ColumnName="idVak" />
+                <ScalarProperty Name="status" ColumnName="status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

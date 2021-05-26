@@ -1,0 +1,166 @@
+﻿@model MVC_Produsen_Validasi.Models.LaporViewModel
+
+@{
+    Layout = "~/Views/Shared/BPOM.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+
+<div class="container">
+    <p>Produsen</p>
+    <h4>Data Laporan Registrasi Vaksin</h4>
+    <a href="#" class="btn btn-primary" onclick="AddNewLaporan(0)">Tambah</a> <br /><br />
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID Laporan</th>
+                <th>Nama Produsen</th>
+                <th>Deskripsi</th>
+                <th>Kode Reg Vaksin</th>
+                <th>Aksi</th>
+
+            </tr>
+        </thead>
+        <tbody id="SetLaporanList">
+            <tr id="LoadingStatus" style="color:red"></tr>
+        </tbody>
+    </table>
+
+    @*Create A Popup Modal With Registration Form For Add Or Edit Report Record*@
+
+    <div class="modal fade" id="MyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="ModalTitle"></h4>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                        <fieldset id="SubmitForm">
+                            @Html.HiddenFor(m => m.idLapor, new { @id = "LapId" })
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.namaProdusen, new { @id = "ProdName", @class = "form-control", @placeholder = "Nama Produsen" })
+                            </div>
+                            <div class="form-group">
+                                @Html.DropDownListFor(m => m.id, ViewBag.ListOfRegVaksin as SelectList, "-- Kode Vaksin --", new { @id = "DropDwn", @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.deskripsi, new { @id = "deskripsi", @class = "form-control", @placeholder = "Keterangan" })
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="btn btn-block btn-primary" id="SaveLaporanRecord">Save</a>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Create A PopUp Modal For ReportConfirmation*@
+
+    <div class="modal fade" id="ReportConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Lapor Registrasi Vaksin</h4>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <p>Apakah anda yakin ingin melaporkan Data Registrasi Vaksin ini ?</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-danger" data-dismiss="modal" id="r">Batal</a>
+                    <a href="#" class="btn btn-primary" onclick="ConfirmReport()">Ya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#LoadingStatus").html("Loading....");
+    $.get("/Produsen/GetLaporanList", null, DataBind);
+    function DataBind(LaporanList) {
+        var SetData = $("#SetLaporanList");
+        for (var i = 0; i < LaporanList.length; i++) {
+            var Data = "<tr class='row_" + LaporanList[i].idLapor + "'>" +
+                "<td>" + LaporanList[i].idLapor + "</td>" +
+                "<td>" + LaporanList[i].namaProdusen + "</td>" +
+                "<td>" + LaporanList[i].deskripsi + "</td>" +
+                "<td>" + LaporanList[i].kode + "</td>" +
+                "<td>" + "<a href='#' class='btn btn-warning' onclick='EditLaporanRecord(" + LaporanList[i].idLapor + ")' >Edit</a> <a href='#' class='btn btn-success' onclick='BuatLaporanRecord(" + LaporanList[i].idLapor + ")'>Lapor</a>" + "</td>" +
+                "</tr>";
+            SetData.append(Data);
+            $("#LoadingStatus").html(" ");
+
+        }
+    }
+
+    //Show The Popup Modal For Add New Report
+
+    function AddNewLaporan(idLapor) {
+        $("#ModalTitle").html("Tambah Laporan Registrasi Vaksin");
+        $("#form")[0].reset();
+        $("#LapId").val(0);
+        $("#DropDwn option:selected").text("--Select Kode Vaksin--");
+        $("#MyModal").modal();
+    }
+
+    //Show The Popup Modal For Edit Report Record
+
+    function EditLaporanRecord(idLapor) {
+        var url = "/Produsen/GetLaporanById?idLapor=" + idLapor;
+        $("#ModalTitle").html("Update Laporan Record");
+        $("#MyModal").modal();
+        $.ajax({
+            type: "GET",
+            url: url,
+            success: function (data) {
+                var obj = JSON.parse(data);
+                $("#LapId").val(obj.idLapor);
+                $("#ProdName").val(obj.namaProdusen);
+                $("#deskripsi").val(obj.deskripsi);
+                $("#DropDwn option:selected").text(obj.Reg_Vaksin.kode);
+                $("#DropDwn option:selected").val(obj.id);
+
+            }
+        })
+    }
+
+    $("#SaveLaporanRecord").click(function () {
+        var data = $("#SubmitForm").serialize();
+        $.ajax({
+            type: "Post",
+            url: "/Produsen/SaveDataInDatabase",
+            data: data,
+            success: function (result) {
+                alert("Success!..");
+                window.location.href = "/Produsen/IndexPantau";
+                $("#MyModal").modal("hide");
+
+            }
+        })
+    })
+
+    //Show The Popup Modal For CreateComfirmation
+    var BuatLaporanRecord = function (idLapor) {
+        $("#LapId").val(idLapor);
+        $("#ReportConfirmation").modal("show");
+    }
+    var ConfirmReport = function () {
+        var LapId = $("#LapId").val();
+        $.ajax({
+            type: "POST",
+            url: "/Produsen/BuatLaporanRecord?idLapor=" + LapId,
+            success: function (result) {
+                $("#ReportConfirmation").modal("hide");
+                $(".row_" + LapId).remove();
+            }
+        })
+    }
+</script>

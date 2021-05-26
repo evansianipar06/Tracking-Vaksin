@@ -1,0 +1,11 @@
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\bin\Project.dll.config
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\bin\Project.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\bin\Project.pdb
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\bin\EntityFramework.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\bin\EntityFramework.SqlServer.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\bin\EntityFramework.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\bin\EntityFramework.SqlServer.xml
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\obj\Debug\WCFService.csproj.CoreCompileInputs.cache
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\obj\Debug\WCFService.csproj.CopyComplete
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\obj\Debug\Project.dll
+D:\Courses\4th Semester\Perkuliahan\Pemrograman Teknologi. NET\Official\New\Proyek Teknet\Pemerintah\Project\Project\obj\Debug\Project.pdb

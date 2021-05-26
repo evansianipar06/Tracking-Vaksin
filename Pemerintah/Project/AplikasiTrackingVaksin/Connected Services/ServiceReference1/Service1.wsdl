@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:58498/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:58498/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:58498/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Project" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_auth_InputMessage">
+    <wsdl:part name="parameters" element="tns:auth" />
+  </wsdl:message>
+  <wsdl:message name="IService1_auth_OutputMessage">
+    <wsdl:part name="parameters" element="tns:authResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAkun_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAkun" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetAkun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAkunResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_datapenduduk_InputMessage">
+    <wsdl:part name="parameters" element="tns:datapenduduk" />
+  </wsdl:message>
+  <wsdl:message name="IService1_datapenduduk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:datapendudukResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_tambahPenduduk_InputMessage">
+    <wsdl:part name="parameters" element="tns:tambahPenduduk" />
+  </wsdl:message>
+  <wsdl:message name="IService1_tambahPenduduk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tambahPendudukResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPenduduk_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPenduduk" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getPenduduk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPendudukResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deletePenduduk_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletePenduduk" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deletePenduduk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletePendudukResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editPenduduk_InputMessage">
+    <wsdl:part name="parameters" element="tns:editPenduduk" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editPenduduk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editPendudukResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_PendudukById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData_PendudukById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_PendudukById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetData_PendudukByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_dataRegVaksin_InputMessage">
+    <wsdl:part name="parameters" element="tns:dataRegVaksin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_dataRegVaksin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:dataRegVaksinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_tambahRegVaksin_InputMessage">
+    <wsdl:part name="parameters" element="tns:tambahRegVaksin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_tambahRegVaksin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tambahRegVaksinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_hapusRegVaksin_InputMessage">
+    <wsdl:part name="parameters" element="tns:hapusRegVaksin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_hapusRegVaksin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:hapusRegVaksinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editRegVaksin_InputMessage">
+    <wsdl:part name="parameters" element="tns:editRegVaksin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_editRegVaksin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editRegVaksinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getRegVaksin_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRegVaksin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getRegVaksin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRegVaksinResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDataRegVaksinById_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDataRegVaksinById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDataRegVaksinById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDataRegVaksinByIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="auth">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/auth" message="tns:IService1_auth_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/authResponse" message="tns:IService1_auth_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAkun">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetAkun" message="tns:IService1_GetAkun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetAkunResponse" message="tns:IService1_GetAkun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="datapenduduk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/datapenduduk" message="tns:IService1_datapenduduk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/datapendudukResponse" message="tns:IService1_datapenduduk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tambahPenduduk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/tambahPenduduk" message="tns:IService1_tambahPenduduk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/tambahPendudukResponse" message="tns:IService1_tambahPenduduk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPenduduk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getPenduduk" message="tns:IService1_getPenduduk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getPendudukResponse" message="tns:IService1_getPenduduk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletePenduduk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deletePenduduk" message="tns:IService1_deletePenduduk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deletePendudukResponse" message="tns:IService1_deletePenduduk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editPenduduk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editPenduduk" message="tns:IService1_editPenduduk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editPendudukResponse" message="tns:IService1_editPenduduk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetData_PendudukById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData_PendudukById" message="tns:IService1_GetData_PendudukById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetData_PendudukByIdResponse" message="tns:IService1_GetData_PendudukById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="dataRegVaksin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/dataRegVaksin" message="tns:IService1_dataRegVaksin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/dataRegVaksinResponse" message="tns:IService1_dataRegVaksin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tambahRegVaksin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/tambahRegVaksin" message="tns:IService1_tambahRegVaksin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/tambahRegVaksinResponse" message="tns:IService1_tambahRegVaksin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="hapusRegVaksin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/hapusRegVaksin" message="tns:IService1_hapusRegVaksin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/hapusRegVaksinResponse" message="tns:IService1_hapusRegVaksin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="editRegVaksin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/editRegVaksin" message="tns:IService1_editRegVaksin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/editRegVaksinResponse" message="tns:IService1_editRegVaksin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRegVaksin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getRegVaksin" message="tns:IService1_getRegVaksin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getRegVaksinResponse" message="tns:IService1_getRegVaksin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDataRegVaksinById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getDataRegVaksinById" message="tns:IService1_getDataRegVaksinById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getDataRegVaksinByIdResponse" message="tns:IService1_getDataRegVaksinById_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="auth">
+      <soap:operation soapAction="http://tempuri.org/IService1/auth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAkun">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetAkun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="datapenduduk">
+      <soap:operation soapAction="http://tempuri.org/IService1/datapenduduk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tambahPenduduk">
+      <soap:operation soapAction="http://tempuri.org/IService1/tambahPenduduk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPenduduk">
+      <soap:operation soapAction="http://tempuri.org/IService1/getPenduduk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePenduduk">
+      <soap:operation soapAction="http://tempuri.org/IService1/deletePenduduk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editPenduduk">
+      <soap:operation soapAction="http://tempuri.org/IService1/editPenduduk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetData_PendudukById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData_PendudukById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataRegVaksin">
+      <soap:operation soapAction="http://tempuri.org/IService1/dataRegVaksin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tambahRegVaksin">
+      <soap:operation soapAction="http://tempuri.org/IService1/tambahRegVaksin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="hapusRegVaksin">
+      <soap:operation soapAction="http://tempuri.org/IService1/hapusRegVaksin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="editRegVaksin">
+      <soap:operation soapAction="http://tempuri.org/IService1/editRegVaksin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRegVaksin">
+      <soap:operation soapAction="http://tempuri.org/IService1/getRegVaksin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDataRegVaksinById">
+      <soap:operation soapAction="http://tempuri.org/IService1/getDataRegVaksinById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:58498/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

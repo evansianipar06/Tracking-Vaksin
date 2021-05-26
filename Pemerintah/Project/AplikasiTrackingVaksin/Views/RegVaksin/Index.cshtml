@@ -1,0 +1,34 @@
+﻿@model IEnumerable<AplikasiTrackingVaksin.ServiceReference1.Reg_Vaksin>
+@{
+    Layout = "~/Views/Shared/Produsen.cshtml";
+}
+
+<div class="container">
+    <p>Produsen (Super)</p>
+    <h4>Data Registrasi Vaksin</h4>
+    <a href="@Url.Action("Tambah", "RegVaksin")" class="btn btn-primary">Tambah</a> <br /><br />
+</div>
+<table class="table table-striped">
+    <tr>
+        <th>Kode</th>
+        <th>Jenis</th>
+        <th>Aksi</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.kode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.jenis)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", null, new { id = item.id }, new { @class = "btn btn-warning btn-sm" })
+                @Html.ActionLink("Hapus", "Hapus", null, new { id = item.id }, new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>

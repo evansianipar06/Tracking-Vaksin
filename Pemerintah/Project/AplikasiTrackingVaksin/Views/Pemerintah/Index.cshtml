@@ -1,0 +1,53 @@
+﻿@model IEnumerable<AplikasiTrackingVaksin.ServiceReference1.Data_Penduduk>
+
+@{
+    Layout = "~/Views/Shared/Pemerintah.cshtml";
+}
+
+
+<div class="container">
+    <p>Pemerintah</p>
+    <h4>Data Penduduk</h4>
+    <a href="@Url.Action("Create", "Pemerintah")" class="btn btn-primary">Tambah</a> <br /><br />
+</div>
+<table class="table table-striped">
+    <tr>
+        <th>NIK</th>
+        <th>Nama</th>
+        <th>Kelurahan</th>
+        <th>Kecamatan</th>
+        <th>Kota</th>
+        <th>Kode Pos</th>
+        <th>Aksi</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NIK)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nama)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kelurahan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kecamatan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kode_pos)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", null, new { id = item.id }, new { @class = "btn btn-warning btn-sm" })
+                @Html.ActionLink("Detail", "Details", null, new { id = item.id }, new { @class = "btn btn-info btn-sm" })
+                @Html.ActionLink("Hapus", "Delete", null, new { id = item.id }, new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
+    }
+
+</table>

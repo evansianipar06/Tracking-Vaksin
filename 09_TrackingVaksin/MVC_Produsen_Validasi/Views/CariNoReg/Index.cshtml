@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MVC_Produsen_Validasi.Models.CekValid>
+
+
+@{
+    Layout = "~/Views/Shared/Pasien.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<div class="container">
+    <h3 style="text-align: center">Data Registrasi Vaksinasi Pasien</h3>
+    <br />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Reg Vaksin</th>
+                <th>NIK</th>
+                <th>Nama</th>
+                <th>Kelurahan</th>
+                <th>Kecamatan</th>
+                <th>Kota</th>
+                <th>Status Vaksin</th>
+
+            </tr>
+        </thead>
+        <tbody id="SetLaporanList">
+            <tr id="LoadingStatus" style="color:red"></tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $("#LoadingStatus").html("Loading....");
+    $.get("/BPOMLaporRegistrasiPasien/GetCekRegPasienList", null, DataBind);
+    function DataBind(LaporanList) {
+        var SetData = $("#SetLaporanList");
+        for (var i = 0; i < LaporanList.length; i++) {
+            var Data = "<tr class='row_" + LaporanList[i].id + "'>" +
+                "<td>" + LaporanList[i].kode + "</td>" +
+                "<td>" + LaporanList[i].NIK + "</td>" +
+                "<td>" + LaporanList[i].nama + "</td>" +
+                "<td>" + LaporanList[i].kelurahan + "</td>" +
+                "<td>" + LaporanList[i].kecamatan + "</td>" +
+                "<td>" + LaporanList[i].kota + "</td>" +
+                "<td>" + LaporanList[i].status + "</td>" +
+                "</tr>";
+            SetData.append(Data);
+            $("#LoadingStatus").html(" ");
+
+        }
+    }
+</script>

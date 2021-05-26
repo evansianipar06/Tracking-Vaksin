@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b5c112e9f06a49338af6f56d0e686f6a" Name="Diagram1">
+        <EntityTypeShape EntityType="TrackingVaksinModel.CekValid" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrackingVaksinModel.Data_Penduduk" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrackingVaksinModel.LaporTerimaVaksin" Width="1.5" PointX="6.125" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrackingVaksinModel.LaporValidasiVaksin" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrackingVaksinModel.PenggunaanVaksin" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrackingVaksinModel.Reg_Vaksin" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TrackingVaksinModel.Vaksin" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__CekValid__idPend__6EC0713C" ManuallyRouted="false" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__CekValid__idVak__6DCC4D03" ManuallyRouted="false" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__CekValid__idVak__6FB49575" ManuallyRouted="false" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__Penggunaa__idPen__756D6ECB" ManuallyRouted="false" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__LaporTeri__idLap__681373AD" ManuallyRouted="false" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__LaporTeri__idVak__690797E6" ManuallyRouted="false" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__LaporValidas__id__634EBE90" ManuallyRouted="false" />
+        <AssociationConnector Association="TrackingVaksinModel.FK__Penggunaa__idReg__74794A92" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

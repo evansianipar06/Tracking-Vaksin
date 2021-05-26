@@ -1,0 +1,218 @@
+﻿@model MVC_Produsen_Validasi.Models.LaporTerimaViewModel
+@{
+    Layout = "~/Views/Shared/BPOM.cshtml";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/chart/exporting.js"></script>
+<script src="~/Scripts/chart/highcharts.js"></script>
+
+<div class="container">
+    <p>BPOM</p>
+    <h2>Data Laporan Terima/ Beli Vaksin</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama Produsen</th>
+                <th>Pengirim</th>
+                <th>Deskripsi</th>
+                <th>Status Vaksin</th>
+
+            </tr>
+        </thead>
+        <tbody id="SetLaporanList">
+            <tr id="LoadingStatus" style="color:red"></tr>
+        </tbody>
+
+    </table>
+    <div id="container" style="min-width: 100px; height: 200px; max-width: 600px; margin: 0 auto"></div>
+
+
+    @*Create A Popup Modal With Registration Form For Add Or Edit Report Record*@
+
+    <div class="modal fade" id="MyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="ModalTitle"></h4>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <form id="form">
+                        <fieldset id="SubmitForm">
+                            @Html.HiddenFor(m => m.idTer, new { @id = "LapId" })
+                            <div class="form-group">
+                                @Html.DropDownListFor(m => m.idLapor, ViewBag.ListOfLaporVaksin as SelectList, "--Select Produsen--", new { @id = "DropDwn1", @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.pengirim, new { @id = "pengirim", @class = "form-control", @placeholder = "Name*" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.deskripsi, new { @id = "deskripsi", @class = "form-control", @placeholder = "deskripsi*" })
+                            </div>
+                            <div class="form-group">
+                                @Html.DropDownListFor(m => m.idVak, ViewBag.ListOfStatusVaksin as SelectList, "--Select Status--", new { @id = "DropDwn2", @class = "form-control" })
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="btn btn-block btn-primary" id="SaveLaporanRecord">Save</a>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*Create A PopUp Modal For ReportConfirmation*@
+
+    <div class="modal fade" id="ReportConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Lapor Data Terima Vaksin</h4>
+                    <a href="#" class="close" data-dismiss="modal">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <h5>Apakah anda yakin ingin melaporkan data ini ??</h5>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-danger" data-dismiss="modal" id="r">Batal</a>
+                    <a href="#" class="btn btn-primary" onclick="ConfirmReport()">Ya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#LoadingStatus").html("Loading....");
+    $.get("/BPOMLaporTerima/GetLaporanTerimaList", null, DataBind);
+    function DataBind(LaporanList) {
+        var SetData = $("#SetLaporanList");
+        for (var i = 0; i < LaporanList.length; i++) {
+            var Data = "<tr class='row_" + LaporanList[i].idTer + "'>" +
+                "<td>" + LaporanList[i].idTer + "</td>" +
+                "<td>" + LaporanList[i].namaProdusen + "</td>" +
+                "<td>" + LaporanList[i].pengirim + "</td>" +
+                "<td>" + LaporanList[i].deskripsi + "</td>" +
+                "<td>" + LaporanList[i].status + "</td>" +
+                "</tr>";
+            SetData.append(Data);
+            $("#LoadingStatus").html(" ");
+
+        }
+    }
+
+    //Show The Popup Modal For Add New Report
+
+    function AddNewLaporan(idTer) {
+        $("#ModalTitle").html("Add New Laporan");
+        $("#form")[0].reset();
+        $("#LapId").val(0);
+        $("#DropDwn1 option:selected").text("--Select Produsen--");
+        $("#DropDwn2 option:selected").text("--Select Status vaksin--");
+        $("#MyModal").modal();
+    }
+
+    //Show The Popup Modal For Edit Report Record
+
+    function EditLaporanRecord(idTer) {
+        var url = "/BPOMLaporTerima/GetLaporanTerimaById?idTer=" + idTer;
+        $("#ModalTitle").html("Update Laporan Record");
+        $("#MyModal").modal();
+        $.ajax({
+            type: "GET",
+            url: url,
+            success: function (data) {
+                var obj = JSON.parse(data);
+                $("#LapId").val(obj.idTer);
+                $("#pengirim").val(obj.pengirim);
+                $("#deskripsi").val(obj.deskripsi);
+                $("#DropDwn1 option:selected").text(obj.LaporValidasiVaksin.namaProdusen);
+                $("#DropDwn1 option:selected").val(obj.idLapor);
+                $("#DropDwn2 option:selected").text(obj.Vaksin.status);
+                $("#DropDwn2 option:selected").val(obj.idVak);
+
+            }
+        })
+    }
+
+    $("#SaveLaporanRecord").click(function () {
+        var data = $("#SubmitForm").serialize();
+        $.ajax({
+            type: "Post",
+            url: "/BPOMLaporTerima/SaveDataInDatabase",
+            data: data,
+            success: function (result) {
+                alert("Success!..");
+                window.location.href = "/BPOMLaporTerima/index";
+                $("#MyModal").modal("hide");
+
+            }
+        })
+    })
+
+    //Show The Popup Modal For CreateComfirmation
+    var BuatLaporanRecord = function (idTer) {
+        $("#LapId").val(idTer);
+        $("#ReportConfirmation").modal("show");
+    }
+    var ConfirmReport = function () {
+        var LapId = $("#LapId").val();
+        $.ajax({
+            type: "POST",
+            url: "/BPOMLaporTerima/BuatLaporanRecord?idTer=" + LapId,
+            success: function (result) {
+                $("#ReportConfirmation").modal("hide");
+                $(".row_" + LapId).remove();
+            }
+        })
+    }
+</script>
+
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Rasio Laporan Status Vaksin Yang Diterima/ Beli'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            name: 'Persentase',
+            colorByPoint: true,
+            data: [{
+                name: 'Valid',
+                y: 1
+            }, {
+                name: 'Invalid',
+                y: 1
+            }]
+        }]
+    });
+</script>
